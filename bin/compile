@@ -8,7 +8,7 @@ set -o pipefail
 # Fail on undeclared variables.
 set -u
 # Debug, echo every command
-#set -x
+set -x
 
 # parse and derive params
 BUILD_DIR=$1
@@ -22,7 +22,7 @@ APP_PREFIX=/app/.heroku
 mkdir -p $APP_PREFIX
 
 # Cache compilation artifacts between builds
-BP_CACHE_DIR="$CACHE_DIR/heroku-kong-buildpack"
+BP_CACHE_DIR="$CACHE_DIR/heroku-kong-buildpack-de-merde"
 mkdir -p $BP_CACHE_DIR
 PREFIX_CACHE_DIR=$BP_CACHE_DIR/app_prefix
 
